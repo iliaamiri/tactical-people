@@ -123,7 +123,7 @@ const Player = {
     }
 
     await database.playerEntity.updateSelectedPigeon(this.playerId, pigeonId);
-    this.currentPigeon = null;
+    this.currentPigeon = database.playerEntity.getSelectedPigeon(this.playerId);
   },
 
   async countUnlockedPigeons() {
