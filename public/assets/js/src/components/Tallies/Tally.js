@@ -30,6 +30,7 @@ class Tally {
       if (td.classList.contains('roundPoints')) {
         return;
       }
+      td.classList.remove('d-none');
       td.classList.add('round-defeat');
     });
     this.currentTallyColumnNumber++;
@@ -42,6 +43,7 @@ class Tally {
       if (td.classList.contains('roundPoints')) {
         return;
       }
+      td.classList.remove('d-none');
       td.classList.add('round-won');
     });
     this.currentTallyColumnNumber++;
@@ -54,6 +56,7 @@ class Tally {
       if (td.classList.contains('roundPoints')) {
         return;
       }
+      td.classList.remove('d-none');
       td.classList.add('round-draw');
     });
     this.currentTallyColumnNumber++;
